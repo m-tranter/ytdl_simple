@@ -3,7 +3,7 @@ body {
 }
 
 #progress,
-#container {
+#my-container {
   width: 100%;
   border-style: solid;
   border-color: black;
@@ -12,7 +12,7 @@ body {
   background-color: LightGrey;
 }
 
-#container,
+#my-container,
 #tagging,
 #logArea {
   display: none;
@@ -29,9 +29,10 @@ h2,
 h3,
 h4 {
   color: Navy;
-  font-family: "Comic Sans MS";
+  font-family: sans-serif;
   text-align: center;
   font-size: 24px;
+  font-weight: 500!important;
 }
 
 h2,
