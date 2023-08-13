@@ -13,8 +13,7 @@ body {
 }
 
 #my-container,
-#tagging,
-#logArea {
+#tagging {
   display: none;
 }
 
@@ -22,6 +21,10 @@ body {
   width: 0%;
   height: 20px;
   background-color: Blue;
+}
+
+h1 {
+  font-weight: 600 !important;
 }
 
 h1,
@@ -32,19 +35,13 @@ h4 {
   font-family: sans-serif;
   text-align: center;
   font-size: 24px;
-  font-weight: 500!important;
 }
 
 h2,
-h4,
-#logArea {
-  width: 100%;
-  padding-bottom: 5px;
-  background-color: powderblue;
+h4 {
+  padding: 5px;
+  background-color: Powderblue;
   border-radius: 10px;
-  border-style: solid;
-  border-color: powderblue;
-  border-width: 2px;
 }
 
 h4 {
@@ -52,21 +49,8 @@ h4 {
   text-align: center;
 }
 
-#logArea {
-  background-color: white;
-  font-size: 12px;
-  border-color: black;
-  border-width: 1px;
-  padding-left: 10px;
-}
-
-#logText {
-  overflow-wrap: break-word;
-}
-
 #go,
-#url,
-#password {
+#url {
   padding: 5px 10px;
 }
 
@@ -76,19 +60,17 @@ label,
 #title,
 #artist,
 #go,
-#url,
-#password {
+#url {
   font-size: 1.3em;
 }
 
 #url,
 #title,
 #artist {
-  border-radius: 4px 0px 0px 4px;
-  width: 30em;
+  border-radius: 4px;
   text-align: left;
-  border: 2px solid #eeeeee;
-  background: #eeeeee;
+  border: 2px solid White;
+  background: White;
   outline: none;
 }
 
@@ -106,11 +88,6 @@ label,
   color: white;
 }
 
-.buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
 #swap,
 #thumb {
   border: 2px solid Green;
@@ -120,10 +97,6 @@ label,
 #thumb {
   border: 2px solid black;
   background: Wheat;
-}
-
-.inline {
-  display: inline-block;
 }
 
 #msg {

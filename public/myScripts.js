@@ -24,7 +24,7 @@ function lengthStr(s) {
   } else {
     msg += `${pad(mins)}:${pad(seconds)}`;
   }
-  return `${msg}&nbsp;&nbsp;&nbsp;&nbsp`;
+  return `${msg}&nbsp;`;
 }
 
 /** Uses the video title to try to guess the tags. */

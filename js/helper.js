@@ -10,19 +10,6 @@ function pad(str) {
   return (`0${str}`).slice(-2);
 }
 
-/** Logging function */
-function logStr(artist, track) {
-  const dateOb = new Date();
-  const date = pad(dateOb.getDate());
-  const month = pad(dateOb.getMonth() + 1);
-  const year = dateOb.getFullYear();
-  const hours = pad(dateOb.getHours());
-  const minutes = pad(dateOb.getMinutes());
-  const seconds = pad(dateOb.getSeconds());
-  const dateStr = `${date}-${month}-${year} ${hours}:${minutes}:${seconds}`;
-  return `${dateStr} ${artist}: ${track}`;
-}
-
 /** Write progress info to the response. */
 function doUpdate(res, data, id, emitter, callback) {
     const percent = JSON.stringify(data);
@@ -43,7 +30,6 @@ function startProgress(res, id, emitter, callback) {
     'Connection': 'keep-alive',
   });
   emitter.on(`event${id}`, callback); 
-  
 }
 
 /** Delete files from the server. */
@@ -55,4 +41,4 @@ function delFile(file) {
     });
 }
 
-module.exports = {delFile, doUpdate, startProgress, logStr};
+module.exports = {delFile, doUpdate, startProgress};
